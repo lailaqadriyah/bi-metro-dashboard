@@ -24,7 +24,6 @@ import {
   Globe2,
   MapPin,
   Search,
-  TrainFront,
   TrendingUp,
   Sun,
   Moon,
@@ -341,16 +340,24 @@ export default function App() {
       <div className="mx-auto max-w-7xl px-4 py-6 md:px-6 md:py-8">
         {/* Header */}
         <header className="mb-6 flex flex-wrap items-start justify-between gap-4">
-          <div className="min-w-0 flex-1">
-           
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Global Metro{" "}
-              <span className="text-blue-500">Analytics</span>
-            </h1>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500 dark:text-slate-400">
-              Dashboard analisis sistem metro dunia — jumlah penumpang, panjang
-              jalur, stasiun, region, dan usia sistem.
-            </p>
+          <div className="flex min-w-0 flex-1 items-start gap-4">
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden md:h-24 md:w-24">
+              <img
+                src="/images/icon.png"
+                alt="Metro BI Dashboard"
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <div className="min-w-0">
+              <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+                Global Metro{" "}
+                <span className="text-blue-500">Analytics</span>
+              </h1>
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500 dark:text-slate-400">
+                Dashboard analisis sistem metro dunia — jumlah penumpang, panjang
+                jalur, stasiun, region, dan usia sistem.
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <div className="hidden text-right md:block">
