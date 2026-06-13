@@ -345,7 +345,12 @@ export default function App() {
               <img
                 src="/images/icon.png"
                 alt="Metro BI Dashboard"
-                className="h-full w-full object-contain"
+                className="h-full w-full object-contain dark:hidden"
+              />
+              <img
+                src="/images/icon-white.png"
+                alt="Metro BI Dashboard"
+                className="hidden h-full w-full object-contain dark:block"
               />
             </div>
             <div className="min-w-0">
