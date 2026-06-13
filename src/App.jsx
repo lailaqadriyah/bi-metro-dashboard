@@ -532,10 +532,10 @@ export default function App() {
         </section>
 
         {/* Charts Row 2 */}
-        <section className="mb-6 grid grid-cols-1 gap-6 xl:grid-cols-3">
+        <section className="mb-6 grid grid-cols-1 items-stretch gap-6 xl:grid-cols-3">
           <div className="xl:col-span-2">
-            <Panel title="Hubungan Panjang Jalur vs Ridership">
-              <div className="h-[340px]">
+            <Panel title="Hubungan Panjang Jalur vs Ridership" className="h-full">
+              <div className="h-[430px]">
                 <ResponsiveContainer width="100%" height="100%">
                   <ScatterChart margin={{ top: 12, right: 12, bottom: 12, left: 4 }}>
                     <CartesianGrid
@@ -572,7 +572,7 @@ export default function App() {
             </Panel>
           </div>
 
-          <Panel title="Distribusi Region">
+          <Panel title="Distribusi Region" className="h-full">
             <div className="h-[260px]">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
